@@ -42,3 +42,11 @@ double power(double base, double exp) {
     Logger::log("power called with " + std::to_string(base) + ", " + std::to_string(exp));
     return std::pow(base, exp);
 }
+double sqrt(double x) {
+    if (x < 0) {
+        Logger::log("ERROR: sqrt of negative number " + std::to_string(x));
+        return 0;
+    }
+    Logger::log("sqrt called with " + std::to_string(x));
+    return std::sqrt(x);
+}
