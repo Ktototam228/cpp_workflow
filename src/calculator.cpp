@@ -38,3 +38,7 @@ int main() {
     std::cout << "Logs written to calculator.log" << std::endl;
     return 0;
 }
+double power(double base, double exp) {
+    Logger::log("power called with " + std::to_string(base) + ", " + std::to_string(exp));
+    return std::pow(base, exp);
+}
