@@ -2,7 +2,7 @@
 #include "logger.h"
 #include <iostream>
 #include <string>      // Добавлено для std::to_string
-#include <cmath>       // Будет нужно позже для power/sqrt
+#include <cmath>
 
 double add(double a, double b) {
     Logger::getInstance()->log("add called with " + std::to_string(a) + ", " + std::to_string(b));
@@ -42,6 +42,7 @@ double power(double base, double exp) {
     Logger::log("power called with " + std::to_string(base) + ", " + std::to_string(exp));
     return std::pow(base, exp);
 }
+
 double sqrt(double x) {
     if (x < 0) {
         Logger::log("ERROR: sqrt of negative number " + std::to_string(x));
