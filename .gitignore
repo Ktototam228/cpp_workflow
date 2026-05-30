@@ -1,0 +1,28 @@
+﻿# Compiled files
+*.exe
+*.obj
+*.o
+*.dll
+*.lib
+
+# Build directory
+build/
+Debug/
+Release/
+x64/
+x86/
+
+# IDE files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Temporary files
+*.log
+*.tmp
+commit.log
+
+# Windows specific
+Thumbs.db
+Desktop.ini
